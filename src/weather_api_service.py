@@ -1,6 +1,5 @@
 import requests
 import datetime
-from typing import Union
 
 from .gps_coordinates import get_coordinates
 from .models.models import Weather
