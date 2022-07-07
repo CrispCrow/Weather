@@ -1,4 +1,4 @@
-from typing import NamedTuple, Union, Annotated
+from typing import NamedTuple, Union, Annotated, Final
 from enum import Enum
 
 Seconds = Annotated[int, 'Seconds']
@@ -12,21 +12,21 @@ class Coordinates(NamedTuple):
 
 
 class WeatherTypes(Enum):
-    Thunderstorm = 'Thunderstorm'
-    Drizzle = 'Drizzle'
-    Rain = 'Rain'
-    Snow = 'Snow'
-    Mist = 'Mist'
-    Smoke = 'Smoke'
-    Haze = 'Haze'
-    Dust = 'Dust'
-    Fog = 'Fog'
-    Sand = 'Sand'
-    Ash = 'Ash'
-    Squall = 'Squall'
-    Tornado = 'Tornado'
-    Clear = 'Clear'
-    Clouds = 'Clouds'
+    THUNDERSTORM: Final = 'Thunderstorm'
+    DRIZZLE: Final = 'Drizzle'
+    RAIN: Final = 'Rain'
+    SNOW: Final = 'Snow'
+    MIST: Final = 'Mist'
+    SMOKE: Final = 'Smoke'
+    HAZE: Final = 'Haze'
+    DUST: Final = 'Dust'
+    FOG: Final = 'Fog'
+    SAND: Final = 'Sand'
+    AAH: Final = 'Ash'
+    SQUALL: Final = 'Squall'
+    TORNADO: Final = 'Tornado'
+    CLEAR: Final = 'Clear'
+    CLOUDS: Final = 'Clouds'
 
 
 class Weather(NamedTuple):
